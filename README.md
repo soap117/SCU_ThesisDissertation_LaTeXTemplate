@@ -12,4 +12,4 @@
 希望本项目能让大家更加专注于学位论文的写作当中，不再需要在乎论文格式排版。
 
 [link1]: https://github.com/cuiao/SCU_ThesisDissertation_LaTeXTemplate
-![Manual Preview](https://github.com/cuiao/SCU_ThesisDissertation_LaTeXTemplate/blob/master/Manual/preview.PNG "Manual Preview")
+![Cover Preview](./Reference Document/cover.png "Cover Preview")

@@ -12,3 +12,7 @@
 
 [link1]: https://github.com/cuiao/SCU_ThesisDissertation_LaTeXTemplate
 ![Cover Preview](/Template/Components/Images/cover.png "Cover Preview")
+
+---
+
+2018年3月11日，早起写论文

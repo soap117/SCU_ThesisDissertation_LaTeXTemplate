@@ -1,5 +1,12 @@
 # 四川大学本科、硕士、博士论文LaTeX模版
 
+#### 简单写一下使用方法：
+我**Mac**下使用TexStudio没有编译成功，后来由于比较熟悉intellj，就直接在intellj中安装的一个**Texify**插件。编译的时候没有用插件自带的pdfLatex编译器，使用的本机TexLive下面的XeTex编译成功。
+
+**Windows**下面，可以安装TexLive（5个多G...），然后设置编译路径为TexLive的bin目录中的pdfLatex.exe，编译成功。
+
+---
+
 左大神告诉我他的博士论文是用自己设计的LaTeX模板写的。
 膜拜了四川大学左大神的博士论文以后感触很多，大神是只能用来膜拜的。
 

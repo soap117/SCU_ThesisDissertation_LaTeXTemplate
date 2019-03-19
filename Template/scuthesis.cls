@@ -34,7 +34,7 @@
 \fancyhf{}
 \fancyhead[RE]{\zihao{-5}\songti\@title}
 \fancyhead[RO]{\zihao{-5}\songti\@title}
-\fancyhead[LO,LE]{\zihao{-5}\songti\universityname\thesisname}
+\fancyhead[LO,LE]{\zihao{-5}\songti 四川大学 \thesisname}
 \fancyfoot[CO,CE]{\zihao{-5}\thepage}
 
 % 使用epstopdf宏包重定向eps输出路径，避免图片错误
@@ -151,7 +151,7 @@
   \def\TypeAbbr{MSc Degree}
 	}{}
 \ifthenelse{\equal{\thesistype}{2}}{
-	\def\thesisname{学士学位论文}
+	\def\thesisname{本科学位论文}
 	\def\CHSauthortype{本科生}
 	\def\ENGauthortype{Undergraduate}
   \def\TypeAbbr{Bachelor Degree}
@@ -207,9 +207,9 @@
 				{
 					\zihao{-3}\kaishu
 					\begin{tabular}{cc}
-						{\makebox[1.5cm][s]{\textbf{\label@title}}}  & \fillinblank{12cm}{\parbox[b]{12cm}{\centering\textbf{\@CoverTitle}}} \\[0.7cm] % 使用 parbox 支持换行
-						{\makebox[1.5cm][s]{\textbf{\label@author}}} & \fillinblank{4cm}{\textbf{\@author}}
-						{\makebox[2cm][s]{\textbf{\label@accomplishdate}}} \fillinblank{5.8cm}{\textbf{\@accomplishdate}}
+						{\makebox[1.5cm][s]{\textbf{题目}}}  & \fillinblank{12cm}{\parbox[b]{12cm}{\centering\textbf{\@CoverTitle}}} \\[0.7cm] % 使用 parbox 支持换行
+						{\makebox[1.5cm][s]{\textbf{译者}}} & \fillinblank{4cm}{\textbf{\@author}}
+						{\makebox[2cm][s]{\textbf{完成日期}}} \fillinblank{5.8cm}{\textbf{\@accomplishdate}}
 					\end{tabular}
 				}
 				\\[2.6cm]
@@ -217,15 +217,15 @@
 				{
 					\zihao{-3}\kaishu
 					\begin{tabular}{cc}
-						{\makebox[3.2cm][s]{\textbf{\label@university}}}  & \fillinblank{6.2cm}{\textbf{\university}}
+						{\makebox[3.2cm][s]{\textbf{培养单位}}}  & \fillinblank{6.2cm}{\textbf{四\hspace{0.5em}川\hspace{0.5em}大\hspace{0.5em}学}}
 						\\[0.8cm]
-						{\makebox[3.2cm][s]{\textbf{\label@supervisor}}}  & \fillinblank{6.2cm}{\textbf{\@supervisor}}
+						{\makebox[3.2cm][s]{\textbf{指导教师}}}  & \fillinblank{6.2cm}{\textbf{\@supervisor}}
 						\\[0.8cm]
-						{\makebox[3.2cm][s]{\textbf{\label@major}}}       & \fillinblank{6.2cm}{\textbf{\@major}}
+						{\makebox[3.2cm][s]{\textbf{专业}}}       & \fillinblank{6.2cm}{\textbf{\@major}}
 						\\[0.8cm]
-						{\makebox[3.2cm][s]{\textbf{\label@direction}}}   & \fillinblank{6.2cm}{\textbf{\@direction}}
-						\\[0.8cm]
-						{\makebox[3.2cm][s]{\textbf{\label@defensedate}}} & \fillinblank{6.2cm}{\textbf{\@defensedate}}
+						%{\makebox[3.2cm][s]{\textbf{研究方向}}}   & \fillinblank{6.2cm}{\textbf{\@direction}}
+						%\\[0.8cm]
+						{\makebox[3.2cm][s]{\textbf{授予学位日期}}} & \fillinblank{6.2cm}{\textbf{\@defensedate}}
 					\end{tabular}
 				}
 			\end{center}
@@ -255,7 +255,7 @@
 		\begin{center}
 			\begin{tabular*}{\textwidth}{p{0.5\textwidth}p{0.5\textwidth}}
 				学位论文作者签名：& 导师签名：\\[1cm]
-				签字日期：\quad年\quad月\quad日 & 签字日期：\quad年\quad月\quad日
+				签字日期：\quad 年 \quad 月 \quad 日 & 签字日期：\quad 年 \quad 月 \quad 日
 			\end{tabular*}
 		\end{center}
 	}
@@ -268,10 +268,10 @@
 		\begin{center}
 			\zihao{-2}\songti{\@title} \\[0.5cm]
 			\zihao{-4}
-			{\heiti{{\label@major}{：}}}{\kaishu{\@major}} \\[0.5cm]
+			{\heiti{{专业}{：}}}{\kaishu{\@major}} \\[0.5cm]
 			{\heiti{{\CHSauthortype}{：}}}{\kaishu{\@author}}
 			\quad
-			{\heiti{{\label@supervisor}{：}}}{\kaishu{\@supervisor}}
+			{\heiti{{指导教师}{：}}}{\kaishu{\@supervisor}}
 		\end{center}
 		\ \vspace{0cm}\par
 		%\ \\[-0.5cm]
@@ -290,10 +290,10 @@
 			\zihao{-2}{\@ENGtitle} \\[1.5em]
 			\zihao{-4}
       {\textbf{Presented for \TypeAbbr}} \\[0.5em]
-			{\textbf{{\label@ENGmajor: \@ENGmajor}}} \\[0.5em]
+			{\textbf{{Subject: \@ENGmajor}}} \\[0.5em]
 			{\textbf{{\ENGauthortype: \@ENGauthor}}}
 			\quad
-			{\textbf{{\label@ENGsupervisor: \@ENGsupervisor}}}
+			{\textbf{{Supervisor: \@ENGsupervisor}}}
 		\end{center}
 		\ \vspace{0cm}\par
 		%\ \\[-0.5cm]\setlength\parindent{2em}

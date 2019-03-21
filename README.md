@@ -6,9 +6,8 @@
 **Windows**下面，可以安装TexLive（5个多G...），然后设置编译路径为TexLive的bin目录中的pdfLatex.exe，编译成功。
 
 #### 在线Latex版本
-罗君宇同学做了一个[overleaf在线][link2]版本，欢迎使用
+罗君宇同学做了一个[overleaf在线](https://www.overleaf.com/read/mkzqckrvzjwd)版本，欢迎使用
 
-[link2]:https://www.overleaf.com/read/mkzqckrvzjwd
 ---
 
 左大神告诉我他的博士论文是用自己设计的LaTeX模板写的。

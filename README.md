@@ -1,12 +1,35 @@
-# 四川大学学位论文LaTeX模版
+# 四川大学本科、硕士、博士论文LaTeX模版
 
-*Powered by pkuthss-1.2beta*
+#### 简单写一下使用方法：
+我**Mac**下使用TexStudio没有编译成功，后来由于比较熟悉intellj，就直接在intellj中安装的一个**Texify**插件。编译的时候没有用插件自带的pdfLatex编译器，使用的本机TexLive下面的XeTex编译成功。
 
-*发布日期：2016年5月30日*
+**Windows**下面，可以安装TexLive（5个多G...），然后设置编译路径为TexLive的bin目录中的pdfLatex.exe，编译成功。
 
-作者本人是一名四川大学的学生，在学习科研活动中经常需要进行学术写作。在使用传统的字处理软件（如*Microsoft® Word*）时，由于其对数学等特殊需求的支持不够友好，因此往往会遇到各种各样的问题，无法高效地写作。作者偶然接触到了LaTeX排版系统，其强大的功能、优美的数学排版和便利的自动化工具等众多优点使人印象深刻，特别适合理工科学生学习和使用。经过了解，发现国际期刊论文主要使用LaTeX进行排版，且国内外许多高校均提供LaTeX的学位论文模版，而我校在这方面的发展还略显不足。在这样的动机驱使下，作者在利用自己较为初级的LaTeX知识，参考了北京大学同学的*pkuthss*模版和其他相关文献的基础上，开发了*scuthesis*这个适用于四川大学研究生（虽包含有本科选项，但封面未修改）使用的LaTeX学位论文模版。希望此模版能够给各位同学提供一个额外的选择，模版中若有瑕疵，还请各位同学批评指正，留言、新建一个*ISSUSE*或*FORK*一个新分支修改。
+#### 在线Latex版本
+罗君宇同学做了一个[overleaf在线](https://www.overleaf.com/read/mkzqckrvzjwd)版本，欢迎使用
+
+---
+
+左大神告诉我他的博士论文是用自己设计的LaTeX模板写的。
+膜拜了四川大学左大神的博士论文以后感触很多，大神是只能用来膜拜的。
+
+`题目：《基因表达式编程核心技术研究》，有兴趣可以去"知网"找一下，希望你知道知网是什么……`
+
+为了追逐大神的脚步，我的博士论文当然也绝对不能用Word了。
+四川大学研究生院并没有提供相关的学位论文LaTeX模板。经过一番搜索在Github上找到原作者[cuiao][link1]的项目*scuthesis*。
+本项目是在原作者的基础上进行了一些修改，能够满足四川大学学位论文的格式要求。
+希望本项目能让大家更加专注于学位论文的写作当中，不再需要在乎论文格式排版。
+
+[link1]: https://github.com/cuiao/SCU_ThesisDissertation_LaTeXTemplate
+![Cover Preview](/Template/Components/Images/cover.png "Cover Preview")
 
 
-本文主要对*scuthesis*文档模版的使用、功能和实现和进行了简要介绍和说明，并以自身为例进行演示。本模版在GitHub的链接为：https://github.com/cuiao/SCU_ThesisDissertation_LaTeXTemplate.
+---
 
-![Manual Preview](https://github.com/cuiao/SCU_ThesisDissertation_LaTeXTemplate/blob/master/Manual/preview.PNG "Manual Preview")
+> 2018年3月11日，早起写论文
+
+> 2018年3月26日，早起写论文
+
+> 2018年4月12日，早起写论文
+
+> 2019年11月7日，早起写论文

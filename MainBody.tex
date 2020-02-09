@@ -1,16 +1,24 @@
-% 文件名：Mainbody.tex
-% 文件描述：以 scuthesis 四川大学学位论文文档类为基础的 LaTeX 模版
-% 作者：LegendaryLeo
-% 修改日期：2016年6月3日
-
+% 文件名：Manual.tex
+% 文件描述：以 scuthesis 四川大学学位论文文档类为基础的 LaTeX 模版说明文档
+% 修改日期：2020年2月9日
 % 选用scuthesis文档类，参数master为硕士论文，可选doctor和bachelor，分别对应博士和学士
-\documentclass[doctor,UTF8,hyperref]{./Template/scuthesis}
-%\newcommand{\supercite}[1]{\textsuperscript{\cite{#1}}}
+\documentclass[bachelor,oneside,UTF8,hyperref]{./Template/scuthesis}
+\usepackage{fancyvrb}
+\usepackage{xcolor}
+\usepackage{dirtree}
+\usepackage{textcomp}
+\renewcommand*{\DTstylecomment}{\color{blue}\kaishu}
+\usepackage{supertabular}
+\usepackage{makecell}
+\usepackage{ltxtable}
+
 \begin{document}
-% 设置文档信息
-\title{基于深度学习的恶意样本检测与对抗技术研究}
-\ENGtitle{The Dissertation Title}
-\CoverTitle{基于深度学习的恶意样本检测与对抗技术研究} %封面标题
+% 文档全局标题，用于页眉、摘要等处
+\title{四川大学学位论文~\LaTeX~模版}
+\ENGtitle{The SCU Dissertation \LaTeX}
+% 文档封面专用标题，支持封面标题换行，使用 '\\' 命令换行
+\CoverTitle{四川大学学位论文~\LaTeX~模版}
+
 \author{方智阳}
 \ENGauthor{Zhiyang Fang}
 \accomplishdate{2019年9月}
@@ -21,10 +29,12 @@
 \ENGmajor{Computer science and technology}
 \direction{网络与信息安全}
 \ENGdirection{Direction Name}
-\defensedate{答辩日期}
-\keywords{关键词1，关键词2，关键词3，关键词4，关键词5}
-\ENGkeywords{Keyword1, Keyword2, Keyword3, Keyword4, Keyword5}
-% 设置论文正文前的页码、页眉等
+\defensedate{2020年6月}
+
+\keywords{四川大学，论文，文档排版，\LaTeX，\CTeX}
+\ENGkeywords{Sichuan University, Dissertation, Document Typesetting, \LaTeX, \CTeX}
+
+\maketitle
 \frontmatter\pagenumbering{Roman}\pagestyle{fancy}\makechaptertitlecenter
 % 自动制作标题
 \maketitle
@@ -45,9 +55,15 @@
 \backmatter\makechaptertitlecenter
 % 按国标自动制作参考文献
 \begin{reference}
-	% 参考文献数据文件为本目录下的sample.bib
-	\bibliographystyle{./Template/chinesebst}\bibliography{ReferenceBase}
+	% 参考文献数据文件为本目录下的Manualbib.bib
+	\bibliographystyle{./Template/chinesebst}
+	\bibliography{Manualbib}
 \end{reference}
+
+\appendix\makechaptertitleleft
+\include{Chapters/Appendix_History}
+
+\backmatter\makechaptertitlecenter
 % 包含在读期间科研成果
 \include{Chapters/Achievements}
 % 包含论文原创性声明(请勿修改)

@@ -28,13 +28,19 @@
 \setlength{\topskip}{-0.7cm}
 
 % 设定页眉、页脚样式。
+%  E 偶数页
+%• O 奇数页
+%• L 页眉或页脚的左边部分
+%• C 页眉或页脚的中间部分
+%• R 页眉或页脚的右边部分
+%• H 页眉
+%• F 页脚
 %\fancypagestyle{plain}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}}
 \fancypagestyle{plain}{\pagestyle{fancy}}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[RE]{\zihao{-5}\songti\@title}
-\fancyhead[RO]{\zihao{-5}\songti\@title}
-\fancyhead[LO,LE]{\zihao{-5}\songti 四川大学 \thesisname}
+\fancyhead[RO,RE]{\zihao{-5}\songti\@title}
+\fancyhead[LO,LE]{\zihao{-5}\songti\universityname\thesisname}
 \fancyfoot[CO,CE]{\zihao{-5}\thepage}
 
 % 使用epstopdf宏包重定向eps输出路径，避免图片错误
@@ -52,6 +58,7 @@
 % 修改题注样式
 \renewcommand{\captionfont}{\zihao{5}\rm\heiti}
 \renewcommand{\captionlabeldelim}{~}
+
 % 使用natbib宏包修改参考文献行距和参考标记样式
 %               上标	方括号	逗号分隔	自动排序分类
 \RequirePackage[super,square,comma,sort&compress]{natbib}
@@ -176,6 +183,19 @@
 \renewcommand{\cftaftertoctitle}{\hfill}
 \renewcommand{\cftbeforetoctitleskip}{10pt}
 \renewcommand{\cftaftertoctitleskip}{10pt}
+% 定义图和表目录标题格式，小三号黑体居中，段前后距10pt
+\renewcommand{\cftloftitlefont}{\hfill\zihao{-3}\rm\heiti}
+\renewcommand{\cftafterloftitle}{\hfill}
+\renewcommand{\cftbeforeloftitleskip}{10pt}
+\renewcommand{\cftafterloftitleskip}{10pt}
+
+\renewcommand{\cftlottitlefont}{\hfill\zihao{-3}\rm\heiti}
+\renewcommand{\cftafterlottitle}{\hfill}
+\renewcommand{\cftbeforelottitleskip}{10pt}
+\renewcommand{\cftafterlottitleskip}{10pt}
+
+% 定义图编号前面的“图”字
+% \renewcommand{\cftfigpresnum}{图 }
 % 定义引导线格式，为点，点距0.5，章节标题也使用引导线
 \renewcommand{\cftdot}{.}
 \renewcommand{\cftdotsep}{0.5}
@@ -199,7 +219,7 @@
 			% 校名和论文类别、“四川大学”字样
 			{
 				\ \\[-1cm]
-				\includegraphics[width=8cm]{./Template/Components/Images/SCU_TITLE}\\[1.5cm]
+				\includegraphics[width=8cm]{./Images/SCU_TITLE}\\[1.5cm]
 					{\makebox[10.5cm][s]{\zihao{-0}\heiti\thesisname}}
 				}
 				\\[2cm]
@@ -208,7 +228,7 @@
 					\zihao{-3}\kaishu
 					\begin{tabular}{cc}
 						{\makebox[1.5cm][s]{\textbf{题目}}}  & \fillinblank{12cm}{\parbox[b]{12cm}{\centering\textbf{\@CoverTitle}}} \\[0.7cm] % 使用 parbox 支持换行
-						{\makebox[1.5cm][s]{\textbf{译者}}} & \fillinblank{4cm}{\textbf{\@author}}
+						{\makebox[1.5cm][s]{\textbf{作者}}} & \fillinblank{4cm}{\textbf{\@author}}
 						{\makebox[2cm][s]{\textbf{完成日期}}} \fillinblank{5.8cm}{\textbf{\@accomplishdate}}
 					\end{tabular}
 				}
@@ -223,8 +243,8 @@
 						\\[0.8cm]
 						{\makebox[3.2cm][s]{\textbf{专业}}}       & \fillinblank{6.2cm}{\textbf{\@major}}
 						\\[0.8cm]
-						%{\makebox[3.2cm][s]{\textbf{研究方向}}}   & \fillinblank{6.2cm}{\textbf{\@direction}}
-						%\\[0.8cm]
+						{\makebox[3.2cm][s]{\textbf{研究方向}}}   & \fillinblank{6.2cm}{\textbf{\@direction}}
+						\\[0.8cm]
 						{\makebox[3.2cm][s]{\textbf{授予学位日期}}} & \fillinblank{6.2cm}{\textbf{\@defensedate}}
 					\end{tabular}
 				}

@@ -6,14 +6,14 @@
 **Windows**下面，可以安装TexLive（5个多G...），然后设置编译路径为TexLive的bin目录中的pdfLatex.exe，编译成功。
 
 #### 在线Latex版本
-罗君宇同学做了一个[overleaf在线](https://www.overleaf.com/read/mkzqckrvzjwd)版本，欢迎使用
+我上传了一个[overleaf在线](https://www.overleaf.com/read/mkzqckrvzjwd)版本，欢迎使用
 
 ---
 
 左大神告诉我他的博士论文是用自己设计的LaTeX模板写的。
 膜拜了四川大学左大神的博士论文以后感触很多，大神是只能用来膜拜的。
 
-`题目：《基因表达式编程核心技术研究》，有兴趣可以去"知网"找一下，希望你知道知网是什么……`
+`题目：《基因表达式编程核心技术研究》，有兴趣可以去拜读一下`
 
 为了追逐大神的脚步，我的博士论文当然也绝对不能用Word了。
 四川大学研究生院并没有提供相关的学位论文LaTeX模板。经过一番搜索在Github上找到原作者[cuiao][link1]的项目*scuthesis*。
@@ -22,14 +22,3 @@
 
 [link1]: https://github.com/cuiao/SCU_ThesisDissertation_LaTeXTemplate
 ![Cover Preview](/Template/Components/Images/cover.png "Cover Preview")
-
-
----
-
-> 2018年3月11日，早起写论文
-
-> 2018年3月26日，早起写论文
-
-> 2018年4月12日，早起写论文
-
-> 2019年11月7日，早起写论文

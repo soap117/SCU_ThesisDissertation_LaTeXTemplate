@@ -25,4 +25,4 @@
 
 [link1]: https://github.com/cuiao/SCU_ThesisDissertation_LaTeXTemplate
 [link2]: http://gs.scu.edu.cn/info/1044/2110.htm
-![Cover Preview](/Template/Components/Images/cover.png "Cover Preview")
+![Cover Preview](/Images/cover.png "Cover Preview")

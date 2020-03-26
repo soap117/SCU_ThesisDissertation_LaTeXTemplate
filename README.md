@@ -1,11 +1,11 @@
 # 四川大学本科、硕士、博士论文LaTeX模版
 
-## 简单写一下使用方法：
-### Mac
-我**Mac**下使用TexStudio没有编译成功，后来由于比较熟悉intellj，就直接在intellj中安装的一个**Texify**插件。编译的时候没有用插件自带的pdfLatex编译器，使用的本机TexLive下面的XeTex编译成功。
+该模块按照四川大学研究生院提供的[《四川大学硕士、博士学位论文格式》][link2]编写，因此与教务处要求的本科毕业论文有一些不同，但是原则上使用这个模板编写本科论文，也是可以的。
 
-### Windows
-**Windows**下面，可以安装TexLive（5个多G...），然后设置编译路径为TexLive的bin目录中的pdfLatex.exe，编译成功。
+## 简单写一下使用方法：
+### Mac、Windows
+- 建议使用TexStudio
+- 比较熟悉Intellij IDEA的同学，可以直接在IDE中安装的一个**Texify**插件。在Intellij中像写代码一样编写论文，快捷键很方便。
 
 ### 在线Latex版本
 我上传了一个[overleaf在线](https://www.overleaf.com/project/5d5ab56e25238361067ebc69)版本，欢迎使用
